@@ -1,0 +1,99 @@
+@import url('normalize.css');
+:root {
+    --dark-purple: #361134;
+    --fandango: #B0228C;
+    --flickr-pink: #EA3788;
+    --candy-pink: #E56B70;
+    --salmon-pink: #F391A0;
+    --pacific-blue: #559CAD;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background: url('../img/background.jpg') var(--salmon-pink);
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: var(--salmon-pink);
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+}
+
+
+/* -------- HEADER --------- */
+
+header {
+    padding-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 70px;
+}
+
+header nav a {
+    color: var(--fandango);
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 20px 0px 00px;
+    padding-bottom: 9px;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease;
+}
+
+header nav a .fas {
+    color: rgba(54, 17, 52, 0);
+    margin-right: 5px;
+    transition: all 1s ease-in-out;
+}
+
+header nav a:hover {
+    /* border-bottom: 2px solid var(--pacific-blue); */
+    color: var(--pacific-blue);
+}
+
+header nav a:hover>.fas {
+    color: var(--pacific-blue);
+    visibility: visible;
+}
+
+
+/* --------- MAIN ---------- */
+
+.container header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    background: rgba(243, 145, 160, .2)
+}
+
+.about .explicacion {
+    width: 50%;
+    /* background: red; */
+    margin: auto;
+}
+
+.about .explicacion>p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+/* --------- Footer ---------- */
+
+footer {
+    background: rgba(85, 156, 173, .4);
+}
