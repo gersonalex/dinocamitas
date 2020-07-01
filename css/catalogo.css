@@ -1,0 +1,85 @@
+    @import url('home.css');
+    .logo>h1:hover {}
+    
+    .main-catalogo {
+        /* background: red; */
+        width: 100%;
+        max-width: 1000px;
+        min-height: 100vh;
+        /* background: red; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .main-catalogo .c-catalogo {
+        width: 65%;
+        /* background: orange; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .main-catalogo .c-aside {
+        width: 35%;
+        /* background: blue; */
+        float: right;
+        overflow: auto;
+    }
+    /* ----- CATALOGO ------- */
+    
+    .main-catalogo .c-catalogo .fill {
+        width: 45.5%;
+        height: 300px;
+        padding: 10px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .main-catalogo .c-catalogo .fill img {
+        width: 100%;
+        border-left: 3px solid var(--salmon-pink);
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-radius: 3px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .main-catalogo .c-catalogo .fill img:hover {
+        border: 3px solid var(--salmon-pink);
+        /* box-shadow: 17px 24px 36px -4px rgba(0, 0, 0, 0.68); */
+        box-shadow: 11px 9px 24px 4px rgba(0, 0, 0, 0.68);
+    }
+    
+    .main-catalogo .c-catalogo .caracteristicas {
+        text-align: center;
+    }
+    
+    .main-catalogo .c-catalogo .caracteristicas>ul {
+        list-style-type: none;
+    }
+    
+    .main-catalogo .c-catalogo .caracteristicas .fas {
+        margin-right: 5px;
+    }
+    
+    .main-catalogo .c-catalogo .caracteristicas .mediano {
+        position: relative;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: rgba(243, 145, 160, .5);
+    }

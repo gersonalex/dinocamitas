@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: orange;
+}
+
+.container {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+    background: blue;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    height: 100px;
+    background: red;
+}
+
+section {
+    height: 300px;
+    width: 70%;
+    background: #ccc;
+}
+
+aside {
+    height: 500px;
+    width: 30%;
+    background: grey;
+}
+
+footer {
+    height: 200px;
+    background: violet;
+}

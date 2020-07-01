@@ -1,0 +1,39 @@
+@import url('home.css');
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .product {
+    width: 30%;
+    /* border: 1px solid var(--salmon-pink); */
+    padding: 10px;
+    border-radius: 4px;
+    /* background: red; */
+}
+
+.main .product .img-gallery {
+    width: 100%;
+    border: 3px solid var(--salmon-pink);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main .product img:hover {
+    border: 3px solid var(--salmon-pink);
+    box-shadow: 11px 9px 24px 4px rgba(0, 0, 0, 0.68);
+}
+
+.main .product img {
+    width: 100%;
+    border: 3px solid var(--salmon-pink);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main .product .logo-galeria {
+    border: 3px solid transparent;
+}
