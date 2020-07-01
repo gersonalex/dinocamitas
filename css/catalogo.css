@@ -83,3 +83,31 @@
     tr:nth-child(even) {
         background-color: rgba(243, 145, 160, .5);
     }
+    
+    table .blue-paw {
+        transition: all .5s ease-in-out;
+    }
+    
+    table .blue-paw:hover {
+        background: var(--pacific-blue);
+    }
+    
+    @media screen and (max-width:800px) {
+        .container header nav {
+            /* justify-content: center; */
+            margin-top: 45px;
+        }
+        .main-catalogo .c-aside {
+            width: 0%;
+        }
+        .main-catalogo .c-catalogo {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        footer .logo-footer {
+            text-align: center;
+        }
+    }

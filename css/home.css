@@ -21,9 +21,14 @@ body {
     background-repeat: repeat;
 }
 
+img {
+    vertical-align: top;
+}
+
 .container {
     width: 90%;
     max-width: 1000px;
+    /* min-height: 100vh; */
     margin: auto;
 }
 
@@ -67,19 +72,20 @@ header nav a:hover>.fas {
     visibility: visible;
 }
 
-
-/* --------- MAIN ---------- */
-
 .container header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+/* --------- ABOUT SECTION ---------- */
+
 .about {
     width: 100%;
     text-align: center;
     padding: 30px 0px;
+    border-radius: 70px 10px 70px 10px;
     background: rgba(243, 145, 160, .6)
 }
 
@@ -99,17 +105,22 @@ header nav a:hover>.fas {
     font-size: 20px;
 }
 
-.pedido {
+
+/* ------------ MAIN SECTION ------------- */
+
+.main {
     /* background: #ccc; */
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
-.pedido .card {
+.main .card {
     /* background: red; */
     margin-bottom: 1px;
     margin-left: 1px;
-    width: 34.5%;
+    width: 45.5%;
     height: 300px;
 }
 
@@ -121,8 +132,8 @@ header nav a:hover>.fas {
     background-size: cover;
     background-position: center;
     font-weight: 300;
-    border: 1px solid var(--pacific-blue);
-    border-radius: 3px;
+    border: 2px solid var(--flickr-pink);
+    border-radius: 10px;
     transition: all 0.5s;
 }
 
@@ -146,7 +157,7 @@ header nav a:hover>.fas {
 .card-4:hover,
 .card-5:hover,
 .card-8:hover {
-    box-shadow: 10px 10px 5px var(--flickr-pink);
+    box-shadow: 10px 10px 5px var(--candy-pink);
     width: 40%;
 }
 
@@ -216,4 +227,25 @@ footer .social-media .instagram:hover {
 
 footer .social-media .facebook:hover {
     background: #3b5999;
+}
+
+@media screen and (max-width:800px) {
+    header nav {
+        justify-content: center;
+        margin-top: 45px;
+    }
+    footer .social-media {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .logo-footer>p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    footer .logo-footer {
+        text-align: center;
+    }
 }
