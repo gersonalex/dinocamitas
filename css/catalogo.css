@@ -1,21 +1,19 @@
     @import url('home.css');
     .main-catalogo {
-        /* background: red; */
-        width: 100%;
         max-width: 1000px;
         min-height: 100vh;
-        /* background: red; */
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        width: 100%;
+        /* background: #ccc; */
     }
     
     .main-catalogo .c-catalogo {
         width: 65%;
-        /* background: orange; */
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .main-catalogo .c-aside {
@@ -23,20 +21,28 @@
         /* background: blue; */
         float: right;
         overflow: auto;
+        background: blue;
     }
     /* ----- CATALOGO ------- */
     
     .main-catalogo .c-catalogo .fill {
-        width: 45.5%;
+        width: 45%;
         height: 300px;
-        padding: 10px;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
+        /* background: red; */
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .main-catalogo .c-catalogo .fill img {
-        width: 100%;
+        display: block;
+        margin: auto;
+        height: auto;
+        max-height: 100%;
+        width: auto;
+        max-width: 100%;
         border-left: 3px solid var(--salmon-pink);
         border-top: 3px solid transparent;
         border-right: 3px solid transparent;
@@ -138,3 +144,5 @@
             width: 100%;
         }
     }
+    
+    @media screen and (max-width:450px) {}
