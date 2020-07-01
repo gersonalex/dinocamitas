@@ -186,6 +186,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 40px 20px;
+    border-radius: 70px 10px 0 0;
     /* border-top: 1px solid red; */
     /* box-shadow: 0px -10px 20px var(--charcoal); */
 }
@@ -247,5 +248,26 @@ footer .social-media .facebook:hover {
 @media screen and (max-width:700px) {
     footer .logo-footer {
         text-align: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .about .explicacion p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .container header .logo {
+        width: 50%;
+        margin: auto;
+    }
+    .main .card {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .about .explicacion p {
+        font-size: 15px;
+        line-height: 17px;
     }
 }

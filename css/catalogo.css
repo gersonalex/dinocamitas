@@ -1,6 +1,4 @@
     @import url('home.css');
-    .logo>h1:hover {}
-    
     .main-catalogo {
         /* background: red; */
         width: 100%;
@@ -92,6 +90,11 @@
         background: var(--pacific-blue);
     }
     
+    footer {
+        border-radius: 70px 10px 0 0;
+    }
+    /* ====== MEDIAQUERIES ====== */
+    
     @media screen and (max-width:800px) {
         .container header nav {
             /* justify-content: center; */
@@ -109,5 +112,29 @@
     @media screen and (max-width:700px) {
         footer .logo-footer {
             text-align: center;
+        }
+    }
+    
+    @media screen and (max-width:520px) {
+        footer {
+            font-size: 15px;
+        }
+        .container header .logo>h1 {
+            font-size: 25px;
+        }
+        .main-catalogo .c-catalogo .fill {
+            height: 200px;
+        }
+        .main-catalogo .c-catalogo .caracteristicas h1 {
+            font-size: 23px;
+        }
+        .main-catalogo .c-catalogo .caracteristicas ul li {
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        .main-catalogo .c-catalogo {
+            width: 100%;
         }
     }
