@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('normalize.css');
 :root {
     --dark-purple: #361134;
@@ -15,7 +16,7 @@
 }
 
 body {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Amatic SC', cursive;
     background: url('../img/background.jpg') var(--salmon-pink);
     background-attachment: fixed;
     background-repeat: repeat;
@@ -97,12 +98,13 @@ header nav a:hover>.fas {
 
 .about>h2 {
     margin-bottom: 10px;
+    font-size: 45px;
 }
 
 .about .explicacion>p {
     /* font-family: 'Open Sans', sans-serif; */
     line-height: 40px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -122,6 +124,13 @@ header nav a:hover>.fas {
     margin-left: 1px;
     width: 45.5%;
     height: 300px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.main .card ul {
+    list-style-type: none;
+    margin-top: 25px;
 }
 
 .card-1,
@@ -142,11 +151,11 @@ header nav a:hover>.fas {
 }
 
 .card-4 {
-    background-image: url('../img/modelos/manchi.jpeg');
+    background-image: url('../img/modelos/bull.jpeg');
 }
 
 .card-5 {
-    background-image: url('../img/modelos/gato.jpeg');
+    background-image: url('../img/modelos/golden.jpeg');
 }
 
 .card-8 {
@@ -187,6 +196,7 @@ footer {
     align-items: center;
     padding: 40px 20px;
     border-radius: 70px 10px 0 0;
+    color: #fff;
     /* border-top: 1px solid red; */
     /* box-shadow: 0px -10px 20px var(--charcoal); */
 }

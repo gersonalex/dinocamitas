@@ -21,7 +21,7 @@
         /* background: blue; */
         float: right;
         overflow: auto;
-        background: blue;
+        /* background: blue; */
     }
     /* ----- CATALOGO ------- */
     
@@ -55,6 +55,11 @@
         border: 3px solid var(--salmon-pink);
         /* box-shadow: 17px 24px 36px -4px rgba(0, 0, 0, 0.68); */
         box-shadow: 11px 9px 24px 4px rgba(0, 0, 0, 0.68);
+    }
+    
+    .main-catalogo .precios,
+    .main-catalogo .caracteristicas {
+        font-size: 25px;
     }
     
     .main-catalogo .c-catalogo .caracteristicas {
