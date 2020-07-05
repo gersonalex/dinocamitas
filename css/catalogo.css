@@ -100,10 +100,9 @@
     table .blue-paw:hover {
         background: var(--pacific-blue);
     }
-    
-    footer {
+    /* footer {
         border-radius: 70px 10px 0 0;
-    }
+    } */
     /* ====== MEDIAQUERIES ====== */
     
     @media screen and (max-width:800px) {
