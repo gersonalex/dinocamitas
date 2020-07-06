@@ -29,7 +29,7 @@
         width: 45%;
         height: 300px;
         /* background: red; */
-        margin: 10px;
+        /* margin: 10px; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,6 +76,10 @@
     
     .main-catalogo .c-catalogo .caracteristicas .mediano {
         position: relative;
+    }
+    
+    header div {
+        margin-bottom: 10px !important;
     }
     
     table {
@@ -130,7 +134,7 @@
             font-size: 15px;
         }
         .container header .logo>h1 {
-            font-size: 25px;
+            font-size: 30px;
         }
         .main-catalogo .c-catalogo .fill {
             height: 200px;
@@ -139,7 +143,10 @@
             font-size: 23px;
         }
         .main-catalogo .c-catalogo .caracteristicas ul li {
-            font-size: 15px;
+            font-size: 20px;
+        }
+        .main-catalogo .c-catalogo .precios {
+            font-size: 20px;
         }
     }
     
@@ -149,4 +156,9 @@
         }
     }
     
-    @media screen and (max-width:450px) {}
+    @media screen and (max-width:450px) {
+        .main-catalogo .c-catalogo .fill {
+            width: 44%;
+            height: 150px;
+        }
+    }

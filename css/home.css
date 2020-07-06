@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('normalize.css');
 :root {
     --dark-purple: #361134;
@@ -87,11 +86,15 @@ header nav a:hover>.fas {
     text-align: center;
     padding: 30px 0px;
     border-radius: 70px 10px 70px 10px;
-    background: rgba(243, 145, 160, .6)
+    background: rgba(243, 145, 160, .6);
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; */
 }
 
 .about .explicacion {
-    width: 50%;
+    width: 60%;
     /* background: red; */
     margin: auto;
 }
@@ -105,6 +108,11 @@ header nav a:hover>.fas {
     /* font-family: 'Open Sans', sans-serif; */
     line-height: 40px;
     font-size: 30px;
+}
+
+.about .explicacion .patita {
+    margin: 20px 0;
+    font-size: 2vw;
 }
 
 
@@ -175,15 +183,12 @@ header nav a:hover>.fas {
 .card-6,
 .card-7 {
     /* background: yellow; */
+    line-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 17px;
-}
-
-.card-3 p {
-    line-height: 20px;
+    /* font-size: 4vw; */
 }
 
 
@@ -240,6 +245,15 @@ footer .social-media .facebook:hover {
     background: #3b5999;
 }
 
+@media screen and (max-width:892px) {
+    .main .card-2,
+    .main .card-3,
+    .main .card-6,
+    .main .card-7 {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width:800px) {
     header nav {
         justify-content: center;
@@ -256,6 +270,10 @@ footer .social-media .facebook:hover {
 }
 
 @media screen and (max-width:700px) {
+    .about .explicacion p {
+        font-size: 30px;
+        line-height: 40px;
+    }
     footer .logo-footer {
         text-align: center;
     }
@@ -263,21 +281,58 @@ footer .social-media .facebook:hover {
 
 @media screen and (max-width:650px) {
     .about .explicacion p {
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about .explicacion .patita {
+        font-size: 25px;
     }
     .container header .logo {
         width: 50%;
         margin: auto;
     }
-    .main .card {
-        height: 150px;
+    footer {
+        height: 350px;
+    }
+    footer .social-media a {
+        margin: 20px 0;
+    }
+    footer .social-media .instagram:hover,
+    footer .social-media .facebook:hover {
+        background: none;
     }
 }
 
 @media screen and (max-width:500px) {
+    .about .explicacion .patita {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:459px) {
+    .main .card-2,
+    .main .card-3,
+    .main .card-6,
+    .main .card-7 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .main .card-2,
+    .main .card-3,
+    .main .card-6,
+    .main .card-7 {
+        font-size: 20px;
+    }
+    .about .explicacion {
+        width: 100%;
+    }
+    .about h2 {
+        font-size: 35px;
+    }
     .about .explicacion p {
-        font-size: 15px;
-        line-height: 17px;
+        font-size: 20px;
+        line-height: 40px;
     }
 }
